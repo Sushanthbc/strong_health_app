@@ -1,0 +1,31 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "variables";
+@import "sessions";
+
+
+// Navbar related changes should be constant
+.navbar-default {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  .navbar-brand {
+    color: $primary-white;
+    &:hover {
+      color: $primary-white;
+    }
+  }
+}
+
+//Sticky Footer
+.footer {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  color: $primary-white;
+  font-family: $font-stack;
+  text-align: match-parent;
+}
+
