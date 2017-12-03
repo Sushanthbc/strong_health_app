@@ -13,6 +13,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'figaro'
 gem 'webpacker'
 gem 'react_on_rails', '~> 10.0.2'
+gem 'foreman'
+gem 'mysql2', '~> 0.4.4'
+gem 'jwt', '~> 1.5', '>= 1.5.4'
+gem 'bcrypt'
 
 ######################################################################
 group :development, :test do
@@ -24,6 +28,13 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rubocop'
+  # Debugging gems
+  gem "pry"
+  gem "pry-byebug"
+  gem "pry-doc"
+  gem "pry-rails"
+  gem "pry-rescue"
+  gem "pry-stack_explorer"
 end
 
 ######################################################################
@@ -32,3 +43,4 @@ group :production do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'mini_racer', platforms: :ruby

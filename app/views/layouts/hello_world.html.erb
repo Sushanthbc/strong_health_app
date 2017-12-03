@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>StrongHealtheApp</title>
+    <title>ReactOnRailsWithWebpacker</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'hello-world-bundle' %>
+    <%= stylesheet_pack_tag 'hello-world-bundle' %>
   </head>
-    <nav class="navbar navbar-default">
-      <div class="navbar-brand">
-        Strong Healthe
-      </div>
-    </nav>
-      <%= yield %>
-    <footer class="footer">
-      <h4> Strong Healthe Corporation Strictly for Internal Use Copyright 2017</h4>
-    </footer>
+
+  <body>
+    <%= yield %>
   </body>
 </html>
