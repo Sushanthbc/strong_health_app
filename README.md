@@ -5,20 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+##### Ruby version
+```
+2.4.3
+```
 
-* System dependencies
+##### Database creation
+```
+rake db:create
+```
+##### Database initialization
+```
+rake db:migrate
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### How to run the test suite
+```
+rspec
+```
