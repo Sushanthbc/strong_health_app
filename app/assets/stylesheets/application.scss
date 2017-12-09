@@ -15,6 +15,35 @@
     }
   }
 }
+// login page logo
+.logo {
+  margin-left: 41%;
+  margin-right: 41%;
+  font-size: 32px;
+}
+
+//fixed side nav
+.sidebar-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 0 0 #1e2c3a;
+  background-color: #263648;
+  width: 275px;
+  color: #fff;
+  .sidebar-nav-brand {
+    font-size: 28px;
+    display: block;
+    border-bottom: 1px solid #1e2c3a;
+    position: absolute;
+    width: 100%;
+    align-content: center;
+  }
+}
+
 
 //Sticky Footer
 .footer {
@@ -28,4 +57,3 @@
   font-family: $font-stack;
   text-align: match-parent;
 }
-

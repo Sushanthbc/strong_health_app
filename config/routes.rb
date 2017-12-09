@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get 'hello_world', to: 'hello_world#index'
   root 'sessions#index'
-  post '/session' => 'sessions#create'
+  resources :sessions
   # we use namespace for prefixing all URL with api/
-  post '/user/authentication' => 'users#authentication'
+  post '/authenticate' => 'sessions#authentication'
   resource :users
 end

@@ -11,28 +11,28 @@ class LoginForm extends React.Component {
     }
   }
 
-  authentication(event) {
-    event.preventDefault();
-    var payload = {
-      username: this.state.username,
-      password: this.state.password
-    }
-    alert(this.state.username);
-    var token = $('meta[name="csrf-token"]').attr('content');
-    $.ajax({
-      url: "/user/authentication",
-      type: 'POST',
-      contentType: 'application/json; charset=utf-8',
-      cache: false,
-      data: payload,
-      beforeSend: function(xhr) {
-        xhr.setRequestHeader('X-CSRF-Token', token);
-      },
-      success: function (data) {
-        alert("I'm validated right and like it");
-      }
-    });
-  }
+  // authentication(event) {
+  //   event.preventDefault();
+  //   var payload = {
+  //     username: this.state.username,
+  //     password: this.state.password
+  //   }
+  //   alert(this.state.username);
+  //   var token = $('meta[name="csrf-token"]').attr('content');
+  //   $.ajax({
+  //     url: "/user/authentication",
+  //     type: 'POST',
+  //     contentType: 'application/json; charset=utf-8',
+  //     cache: false,
+  //     data: payload,
+  //     beforeSend: function(xhr) {
+  //       xhr.setRequestHeader('X-CSRF-Token', token);
+  //     },
+  //     success: function (data) {
+  //       alert("I'm validated right and like it");
+  //     }
+  //   });
+  // }
 
   render() {
     return (

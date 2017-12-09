@@ -3,6 +3,15 @@ class ApplicationController < ActionController::Base
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found_response
   rescue_from ActiveRecord::RecordInvalid, with: :record_not_saved_response
 
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+  helper_method :current_user
+
+  def authorize
+    redirect_to '/' unless current_user
+  end
+
   def record_not_found_response
     render json: {
       status: :not_found,

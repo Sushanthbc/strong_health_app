@@ -3,12 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //Form CSS
-
 .form-align {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
   margin-top: 5%;
   border: solid 1px;
+  border-radius: 10px;
   border-color: #999999;
   padding: 20px;
+  background: #dde5ee;
+}
+
+.form-login-submit {
+  width: 100%;
 }
