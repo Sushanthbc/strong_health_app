@@ -38,9 +38,24 @@
     font-size: 28px;
     display: block;
     border-bottom: 1px solid #1e2c3a;
-    position: absolute;
-    width: 100%;
     align-content: center;
+  }
+  .category-title {
+    font-size: 20px;
+    display: block;
+    border-bottom: 1px solid #1e2c3a;
+    padding: 10px;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  :hover.category-title {
+    background-color: #899388;
   }
 }
 

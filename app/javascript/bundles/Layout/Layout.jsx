@@ -1,13 +1,20 @@
 import React from 'react';
-import {Router, Route} from 'react-router';
+import {Switch, Route} from 'react-router';
+import NavigationBar from '../components/NavigationBar/NavigationBar';
+import { Link, BrowserRouter } from 'react-router-dom'
 
 class Layout extends React.Component {
   render () {
     return (
-      <Router>
-        <Route path="/" component={NavigationBar}></Route>
-        <Route path="/add_inventory" component={AddInventory}></Route>
-      </Router>
+      <div className="layout-container">
+        <NavigationBar />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/"></Route>
+          </Switch>
+        </BrowserRouter>
+      </div>
     )
   }
 }
+export default Layout

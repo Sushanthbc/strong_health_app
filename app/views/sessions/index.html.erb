@@ -1,7 +1,7 @@
 <div class="container">
   <%= render partial: 'shared/flash_messages', flash: flash %>
   <% if current_user %>
-    <%= react_component 'NavigationBar' %>
+    <%= react_component 'Layout' %>
   <% else %>
     <%= form_tag '/authenticate', id: 'loginForm', class: 'form-vertical form-align' do -%>
       <div class="form-group">
