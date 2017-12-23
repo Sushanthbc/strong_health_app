@@ -45,18 +45,18 @@
     display: block;
     border-bottom: 1px solid #1e2c3a;
     padding: 10px;
-    a {
-      color: #ffffff;
-      text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
     }
-    a:hover {
-      color: #ffffff;
-      text-decoration: none;
-    }
-  }
   :hover.category-title {
     background-color: #899388;
   }
+}
+
+// right pane container
+.right-pane-container {
+  padding-left: 20%;
+  padding-top: 5%;
 }
 
 

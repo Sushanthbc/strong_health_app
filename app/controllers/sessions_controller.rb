@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :authorize, except: [:authentication, :index]
+  before_action :authorize, except: %i[authentication index]
 
   def index
     # TODO: render the page
@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
         flash['error'] = 'Username or Password field cannot be empty'
       end
     else
-      logger.error 'Looks like someone tampered with params'
+      Rails.logger.error 'Looks like someone tampered with params'
     end
     redirect_to root_path
   end
@@ -40,7 +40,6 @@ class SessionsController < ApplicationController
   private
 
   def authentication_params
-    return params.permit(:username, :password)
+    params.permit(:username, :password)
   end
-
 end

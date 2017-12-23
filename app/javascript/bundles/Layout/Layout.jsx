@@ -1,20 +1,24 @@
 import React from 'react';
-import {Switch, Route} from 'react-router';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import NavigationBar from '../components/NavigationBar/NavigationBar';
-import { Link, BrowserRouter } from 'react-router-dom'
+import AccountForm from '../components/AccountForm/AccountForm';
+import LoginForm from '../components/LoginForm/LoginForm';
 
 class Layout extends React.Component {
   render () {
     return (
       <div className="layout-container">
-        <NavigationBar />
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/"></Route>
-          </Switch>
-        </BrowserRouter>
+        <Router>
+          <div>
+            <NavigationBar />
+              <Switch>
+                <Route path="/account_info" component={AccountForm} />
+                <Route component={AccountForm} />
+              </Switch>
+          </div>
+        </Router>
       </div>
     )
   }
 }
-export default Layout
+export default Layout;

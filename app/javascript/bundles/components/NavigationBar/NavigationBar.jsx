@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink as Link } from 'react-router-dom';
 
 class NavigationBar extends React.Component {
   render() {
@@ -6,15 +7,12 @@ class NavigationBar extends React.Component {
       <nav role="navigation" className="sidebar-nav">
         <header className="sidebar-nav-brand">Strong Healthe</header>
         <div className="scroll-container">
-          <div className="category-title">
-            <a href="#"> Add Product </a>
-          </div>
-          <div className="category-title">
-            Purchase Entry
-          </div>
+          <Link to="/" className="category-title"> Add Product </Link>
+          <Link to="/add_product" className="category-title"> Purchase Entry </Link>
+          <Link to="/account_info" className="category-title"> Account Info </Link>
         </div>
       </nav>
     )
   }
 }
-export default NavigationBar
+export default NavigationBar;
