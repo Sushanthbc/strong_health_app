@@ -2,7 +2,6 @@
 @import "bootstrap";
 @import "variables";
 @import "sessions";
-@import "top_navigation";
 
 
 // Navbar related changes should be constant
@@ -36,13 +35,13 @@
   width: 275px;
   color: #fff;
   .sidebar-nav-brand {
-    font-size: 28px;
+    font-size: 21px;
     display: block;
     border-bottom: 1px solid #1e2c3a;
     align-content: center;
   }
   .category-title {
-    font-size: 20px;
+    font-size: 16px;
     display: block;
     border-bottom: 1px solid #1e2c3a;
     padding: 10px;
@@ -50,7 +49,7 @@
     text-decoration: none;
     }
   :hover.category-title {
-    background-color: #899388;
+    background-color: #546a83;
   }
 }
 
@@ -66,6 +65,10 @@
   display: block;
   background-color: #f2f2f2;
   color: #263648;
+  position: fixed;
+  .top-navigation-content {
+    font-size: 19px;
+  }
 }
 
 //Sticky Footer
