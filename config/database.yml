@@ -8,14 +8,10 @@ development:
   <<: *default
   database: iron_dev
   username: root
-  password: Batman
+  password:
 
 test:
   <<: *default
   database: iron_test
   username: root
-  password: Batman
-
-production:
-  <<: *default
-  database: <%= ENV['database_name'] %>
+  password:
