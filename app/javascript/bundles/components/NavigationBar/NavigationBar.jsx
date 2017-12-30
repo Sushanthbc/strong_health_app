@@ -15,7 +15,7 @@ class NavigationBar extends React.Component {
           <Link to="/purchase_entry" className="category-title">
             Purchase Entry </Link>
           <Link to="/account_info" className="category-title">
-            Account Info </Link>
+            Account Information </Link>
         </div>
       </nav>
     )
