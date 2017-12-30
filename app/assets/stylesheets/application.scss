@@ -29,19 +29,20 @@
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
   box-shadow: 1px 0 0 #1e2c3a;
   background-color: #263648;
-  width: 275px;
   color: #fff;
+  width: 200px;
   .sidebar-nav-brand {
+    margin: 0;
+    line-height: 55px;
     font-size: 21px;
     display: block;
     border-bottom: 1px solid #1e2c3a;
     align-content: center;
   }
   .category-title {
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     border-bottom: 1px solid #1e2c3a;
     padding: 10px;
@@ -53,21 +54,18 @@
   }
 }
 
-// right pane container
-.right-pane-container {
-  margin-left: auto;
-}
-
 // Top Navigation in react component
 .top-navigation {
-  padding-left: 10%;
-  width: 100%;
-  display: block;
-  background-color: #f2f2f2;
   color: #263648;
-  position: fixed;
+  padding: 0 15px;
+  margin-left: 200px;
+  border-bottom: 1px solid #d2dae3;
+  background-color: #fff;
   .top-navigation-content {
-    font-size: 19px;
+    margin: 0;
+    line-height: 55px;
+    letter-spacing: -1px;
+    font-size: 20px;
   }
 }
 

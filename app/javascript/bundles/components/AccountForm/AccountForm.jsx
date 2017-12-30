@@ -5,7 +5,7 @@ import TopNavigation from '../TopNavigation/TopNavigation';
 class AccountForm extends React.Component {
   render () {
     return (
-      <div>
+      <div className="layout-container">
         <TopNavigation value="Account Information" />
       </div>
     )

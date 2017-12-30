@@ -10,17 +10,15 @@ class Layout extends React.Component {
   }
   render () {
     return (
-      <div className="layout-container">
-        <Router>
-          <div>
-            <NavigationBar />
-            <Switch>
-              <Route exact path="/account_info" component={AccountForm} />
-              <Route exact path="/" component={AddProduct} />
-            </Switch>
-          </div>
-        </Router>
-      </div>
+      <Router>
+        <div>
+          <NavigationBar />
+          <Switch>
+            <Route exact path="/account_info" component={AccountForm} />
+            <Route exact path="/" component={AddProduct} />
+          </Switch>
+        </div>
+      </Router>
     )
   }
 }
