@@ -9,7 +9,7 @@ module Api
       if account.update(account_params)
         render json: { status: ok }
       else
-        Rails.logger.error "Failed to update"
+        Rails.logger.error 'Failed to update'
       end
     end
 

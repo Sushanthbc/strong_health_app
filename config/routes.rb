@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   end
   post '/authenticate' => 'sessions#authentication'
   resource :users
+  # React routes
+  get '/add_product' => 'sessions#index'
+  get '/purchase_entry' => 'sessions#index'
+  get '/account_info' => 'sessions#index'
 end

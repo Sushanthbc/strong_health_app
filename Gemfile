@@ -16,17 +16,19 @@ gem 'sqlite3'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
-
 ######################################################################
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  ######################################################################
+  # Linters and security
   gem 'rubocop'
+  gem 'scss_lint', require: false
+  ######################################################################
   gem 'selenium-webdriver'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console', '>= 3.3.0'
   # Debugging gems
   gem 'pry'
   gem 'pry-byebug'
@@ -34,11 +36,18 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
+  gem 'rails_best_practices'
+  gem 'rspec-rails', '3.6.1'
+  gem 'rspec-retry'
+  gem 'shoulda-matchers', '~> 3.1'
 end
-
 ######################################################################
 group :production do
   gem 'pg'
+end
+######################################################################
+group :development do
+  gem 'web-console', '>= 3.3.0'
 end
 
 gem 'mini_racer', platforms: :ruby
