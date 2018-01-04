@@ -16,6 +16,9 @@ test:
   username: root
   password:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> issue9-rspec-framework
 
 production:
   <<: *default
