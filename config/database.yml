@@ -15,7 +15,10 @@ test:
   database: iron_test
   username: root
   password:
+<<<<<<< HEAD
 
 production:
   <<: *default
   database: <%= ENV['database_name'] %>
+=======
+>>>>>>> issue6-heroku-deployment
