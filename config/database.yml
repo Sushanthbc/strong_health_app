@@ -15,13 +15,3 @@ test:
   database: iron_test
   username: root
   password:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> issue9-rspec-framework
-
-production:
-  <<: *default
-  database: <%= ENV['database_name'] %>
-=======
->>>>>>> issue6-heroku-deployment
