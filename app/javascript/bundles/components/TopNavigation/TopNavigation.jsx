@@ -1,11 +1,15 @@
 import React from 'react';
 
-export default class TopNavigation extends React.Component {
+class TopNavigation extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return(
       <div className="top-navigation">
-        <h3> Add Product </h3>
+        <div className="top-navigation-content">{this.props.value}</div>
       </div>
     )
   }
 }
+export default TopNavigation;
