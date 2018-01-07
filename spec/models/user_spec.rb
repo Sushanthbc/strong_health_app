@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
                         first_name: 'Laddy', last_name: 'Basic',
                         phone: '91-9739375345', admin: 1, role: 'Doctor')
   end
-  context "Validate uniqueness and presence of"  do
+  context 'Validate uniqueness and presence of' do
     it { is_expected.to validate_uniqueness_of :username }
     it { is_expected.to validate_uniqueness_of :email }
     it { should validate_uniqueness_of(:phone).case_insensitive }
